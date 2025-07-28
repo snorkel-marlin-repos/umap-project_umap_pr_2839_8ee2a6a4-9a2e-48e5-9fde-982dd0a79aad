@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+
+{% block head_title %}
+  {% trans "Login" %} - {{ SITE_DESCRIPTION }}
+{% endblock head_title %}
+{% load umap_tags i18n %}
+
+{% block extra_head %}
+  {% umap_css %}
+  {{ block.super }}
+{% endblock extra_head %}
+{% block body_class %}
+  login
+{% endblock body_class %}
+{% block content %}
+  <section>
+    <header class="umap-nav">
+      {% include "umap/branding.html" %}
+    </header>
+    <h2>{% trans "To save and easily find your maps, identify yourself." %}</h2>
+    {% if ENABLE_ACCOUNT_LOGIN %}
+      <h3>
+        {% trans "Please log in with your account:" %}
+      </h3>
+      <div>
+        {% if form.non_field_errors %}
+          <ul class="form-errors">
+            {% for error in form.non_field_errors %}
+              <li>
+                {{ error }}
+              </li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+        <form id="login_form" action="{% url "login" %}" method="post">
+          {% csrf_token %}
+          {{ form.username.errors }}
+          <input type="text"
+                 name="username"
+                 placeholder="{% trans "Username" %}"
+                 autofocus />
+          {{ form.password.errors }}
+          <input type="password" name="password" placeholder="{% trans "Password" %}" />
+          <input type="submit" value="{% trans "Login" %}" />
+        </form>
+      </div>
+    {% endif %}
+    {% if backends.backends|length %}
+      <h3>
+        {% trans "Please choose a provider:" %}
+      </h3>
+      <div>
+        <ul class="login-grid block-grid">
+          {% for name in backends.backends %}
+            <li>
+              {% include "umap/components/provider.html" with name=name %}
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
+  </section>
+{% endblock content %}

@@ -1,0 +1,52 @@
+{
+  "files": {
+    "include": ["umap/static/umap/js/**"],
+    "ignore": ["umap/static/umap/vendors/**"]
+  },
+  "formatter": {
+    "enabled": true,
+    "formatWithErrors": false,
+    "ignore": [],
+    "attributePosition": "auto",
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineEnding": "lf",
+    "lineWidth": 88
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "style": {
+        "useBlockStatements": "off",
+        "noShoutyConstants": "warn",
+        "noParameterAssign": "off"
+      },
+      "complexity": {
+        "noForEach": "off"
+      },
+      "performance": {
+        "noDelete": "off"
+      }
+    }
+  },
+  "javascript": {
+    "formatter": {
+      "arrowParentheses": "always",
+      "bracketSameLine": false,
+      "bracketSpacing": true,
+      "jsxQuoteStyle": "double",
+      "quoteProperties": "asNeeded",
+      "quoteStyle": "single",
+      "semicolons": "asNeeded",
+      "trailingCommas": "es5"
+    }
+  },
+  "json": {
+    "formatter": {
+      "trailingCommas": "none"
+    }
+  },
+  "organizeImports": {
+    "enabled": true
+  }
+}

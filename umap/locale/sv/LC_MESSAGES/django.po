@@ -1,0 +1,692 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# d402bbf52766ea36c1c6bd472b2de8fb_a8a94ad, 2020
+# carlbacker, 2020
+# d402bbf52766ea36c1c6bd472b2de8fb_a8a94ad, 2020
+# carlbacker, 2020,2023
+msgid ""
+msgstr ""
+"Project-Id-Version: uMap\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-24 08:39+0000\n"
+"PO-Revision-Date: 2013-11-22 14:00+0000\n"
+"Last-Translator: carlbacker, 2020,2023\n"
+"Language-Team: Swedish (http://app.transifex.com/openstreetmap/umap/language/sv/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: sv\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: admin.py:16
+msgid "CSV Export"
+msgstr ""
+
+#: decorators.py:60
+msgid "This map is not publicly available"
+msgstr ""
+
+#: middleware.py:13
+msgid "Site is readonly for maintenance"
+msgstr "Webbplatsen är skrivskyddad för underhållsarbete."
+
+#: models.py:60 models.py:79
+msgid "name"
+msgstr "namn"
+
+#: models.py:62 models.py:475
+msgid "description"
+msgstr "beskrivning"
+
+#: models.py:110
+msgid "details"
+msgstr "detaljer"
+
+#: models.py:111
+msgid "Link to a page where the licence is detailed."
+msgstr "Länk till sida med detaljerad licens information."
+
+#: models.py:121
+msgid "URL template using OSM tile format"
+msgstr "URL-mall med OSM:s tile-format"
+
+#: models.py:127
+msgid "Order of the tilelayers in the edit box"
+msgstr "Ordningen för tile-lager i redigeringsrutan"
+
+#: models.py:175 models.py:469
+msgid "Only editable with secret edit link"
+msgstr "Redigering är bara tillåten med privat redigeringslänk"
+
+#: models.py:176 models.py:470
+msgid "Everyone can edit"
+msgstr "Alla kan redigera"
+
+#: models.py:179 models.py:463
+msgid "Everyone"
+msgstr "Alla"
+
+#: models.py:180 models.py:189 models.py:464
+msgid "Editors and team only"
+msgstr ""
+
+#: models.py:181 models.py:465
+msgid "Owner only"
+msgstr "Enbart ägaren "
+
+#: models.py:184
+msgid "Draft (private)"
+msgstr ""
+
+#: models.py:185
+msgid "Everyone (public)"
+msgstr "Alla (publik)"
+
+#: models.py:188
+msgid "Anyone with link"
+msgstr "Alla med en länk"
+
+#: models.py:190
+msgid "Blocked"
+msgstr "Låst"
+
+#: models.py:191
+msgid "Deleted"
+msgstr ""
+
+#: models.py:194
+msgid "center"
+msgstr "centrera"
+
+#: models.py:195
+msgid "zoom"
+msgstr "zooma"
+
+#: models.py:197
+msgid "locate"
+msgstr "lokalisera"
+
+#: models.py:197
+msgid "Locate user on load?"
+msgstr "Lokalisera användaren vid uppstart?"
+
+#: models.py:201
+msgid "Choose the map licence."
+msgstr "Välj licens för kartan."
+
+#: models.py:202
+msgid "licence"
+msgstr "licens"
+
+#: models.py:213
+msgid "owner"
+msgstr "ägare"
+
+#: models.py:217
+msgid "editors"
+msgstr "redaktörer"
+
+#: models.py:223
+msgid "team"
+msgstr ""
+
+#: models.py:229 models.py:491
+msgid "edit status"
+msgstr "redigeringsstatus"
+
+#: models.py:234
+msgid "share status"
+msgstr "delningsstatus"
+
+#: models.py:237 models.py:486
+msgid "settings"
+msgstr "inställningar"
+
+#: models.py:402
+msgid "Clone of"
+msgstr "Kopia av"
+
+#: models.py:462 models.py:468
+msgid "Inherit"
+msgstr ""
+
+#: models.py:481
+msgid "display on load"
+msgstr "visa vid uppstart"
+
+#: models.py:482
+msgid "Display this layer on load."
+msgstr "Visa detta lager från start."
+
+#: templates/403.html:8
+msgid ""
+"<a href=\"https://discover.umap-project.org/support/faq/#map-statuses\" "
+"target=\"_blank\">Find out here the documentation</a> on how to manage map’s"
+" permissions."
+msgstr ""
+
+#: templates/403.html:10 templates/404.html:8
+msgid "← Go to the homepage"
+msgstr ""
+
+#: templates/404.html:7
+msgid "404 Page Not Found"
+msgstr ""
+
+#: templates/auth/user_detail.html:8
+#, python-format
+msgid "Browse %(current_user)s's maps"
+msgstr "Bläddra bland %(current_user)ss kartor"
+
+#: templates/auth/user_detail.html:17
+#, python-format
+msgid "%(current_user)s has no maps."
+msgstr "%(current_user)s har inga kartor."
+
+#: templates/auth/user_form.html:21 templates/umap/team_form.html:21
+msgid "Save"
+msgstr ""
+
+#: templates/auth/user_form.html:27
+msgid "Your current providers"
+msgstr ""
+
+#: templates/auth/user_form.html:39
+msgid "Connect to another provider"
+msgstr ""
+
+#: templates/auth/user_form.html:42
+msgid ""
+"It's a good habit to connect your account to more than one provider, in case"
+" one provider becomes unavailable, temporarily or even permanently."
+msgstr ""
+
+#: templates/auth/user_stars.html:8
+#, python-format
+msgid "Browse %(current_user)s's starred maps"
+msgstr ""
+
+#: templates/auth/user_stars.html:17
+#, python-format
+msgid "%(current_user)s has no starred maps yet."
+msgstr ""
+
+#: templates/base.html:13
+msgid ""
+"uMap lets you create maps with OpenStreetMap layers in a minute and embed "
+"them in your site."
+msgstr "Med uMap kan du på minuter skapa egna kartor med OpenStreetMap-lager och bädda in dem på din webbsida."
+
+#: templates/registration/login.html:6 templates/registration/login.html:46
+msgid "Login"
+msgstr "Logga in"
+
+#: templates/registration/login.html:22
+msgid "To save and easily find your maps, identify yourself."
+msgstr ""
+
+#: templates/registration/login.html:25
+msgid "Please log in with your account:"
+msgstr ""
+
+#: templates/registration/login.html:42
+msgid "Username"
+msgstr "Användarnamn"
+
+#: templates/registration/login.html:45
+msgid "Password"
+msgstr "Lösenord"
+
+#: templates/registration/login.html:52
+msgid "Please choose a provider:"
+msgstr ""
+
+#: templates/umap/about_summary.html:12
+#, python-format
+msgid ""
+"uMap lets you create maps with <a href=\"%(osm_url)s\" />OpenStreetMap</a> "
+"layers in a minute and embed them in your site."
+msgstr "Med uMap kan du på minuter skapa egna kartor med <a href=\"%(osm_url)s\" />OpenStreetMap</a> lager och sedan bädda in dem på din webbsida."
+
+#: templates/umap/about_summary.html:23
+msgid "Choose the layers of your map"
+msgstr "Välj lager för din karta"
+
+#: templates/umap/about_summary.html:26
+msgid "Add POIs: markers, lines, polygons..."
+msgstr "Lägg till POI:er, markörer, linjer, polygoner..."
+
+#: templates/umap/about_summary.html:29
+msgid "Manage POIs colours and icons"
+msgstr "Ändra färger och ikoner för POI:er"
+
+#: templates/umap/about_summary.html:32
+msgid "Manage map options: display a minimap, locate user on load…"
+msgstr "Hantera kartalternativ: visa en minikarta, lokalisera användaren..."
+
+#: templates/umap/about_summary.html:35
+msgid "Batch import geostructured data (geojson, gpx, kml, osm...)"
+msgstr "Importera strukturerad geodata (geojson, gpx, kml, osm...)"
+
+#: templates/umap/about_summary.html:38
+msgid "Choose the license for your data"
+msgstr "Välj licens för dina data"
+
+#: templates/umap/about_summary.html:41
+msgid "Embed and share your map"
+msgstr "Bädda in och dela din karta"
+
+#: templates/umap/about_summary.html:52
+#, python-format
+msgid "And it's <a href=\"%(repo_url)s\">open source</a>!"
+msgstr "Och det är <a href=\"%(repo_url)s\">öppen källkod</a>!"
+
+#: templates/umap/about_summary.html:63 templates/umap/navigation.html:39
+#: templates/umap/user_dashboard.html:40
+msgid "Create a map"
+msgstr "Skapa en karta"
+
+#: templates/umap/about_summary.html:66
+msgid "Play with the demo"
+msgstr "Lek med demotjänsten"
+
+#: templates/umap/components/alerts/alert.html:17
+#: templates/umap/components/alerts/alert.html:66
+#: templates/umap/components/alerts/alert.html:94
+msgid "Close"
+msgstr ""
+
+#: templates/umap/components/alerts/alert.html:32
+#, python-format
+msgid ""
+"Pro-tip: to easily find back your maps, <a href=\"%(login_url)s\" "
+"target=\"_blank\">create an account</a> or <a href=\"%(login_url)s\" "
+"target=\"_blank\">log in</a>."
+msgstr ""
+
+#: templates/umap/components/alerts/alert.html:37
+msgid "Here is your secret link to edit the map, please keep it safe:"
+msgstr ""
+
+#: templates/umap/components/alerts/alert.html:41
+msgid "Copy link"
+msgstr ""
+
+#: templates/umap/components/alerts/alert.html:48
+msgid "Enter your email address to receive the secret link:"
+msgstr ""
+
+#: templates/umap/components/alerts/alert.html:54
+msgid "Email"
+msgstr ""
+
+#: templates/umap/components/alerts/alert.html:57
+msgid "Send me the link"
+msgstr ""
+
+#: templates/umap/components/alerts/alert.html:81
+msgid "See their edits in another tab"
+msgstr ""
+
+#: templates/umap/components/alerts/alert.html:84
+msgid "Keep your changes and loose theirs"
+msgstr ""
+
+#: templates/umap/components/alerts/alert.html:87
+msgid "Keep their changes and loose yours"
+msgstr ""
+
+#: templates/umap/content.html:26
+msgid ""
+"This instance of uMap is currently in read only mode, no creation/edit is "
+"allowed."
+msgstr "Denna instans av uMap är för tillfället låst i visningsläge, ingen redigering är tillåten. "
+
+#: templates/umap/content.html:34
+#, python-format
+msgid ""
+"This is a demo instance, used for tests and pre-rolling releases. If you "
+"need a stable instance, please use <a "
+"href=\"%(stable_url)s\">%(stable_url)s</a>. You can also host your own "
+"instance, it's <a href=\"%(repo_url)s\">open source</a>!"
+msgstr "Det här är en demo-instans, som används för tester och förhandsversioner. Om du behöver en stabil instans, använd <a href=\"%(stable_url)s\">%(stable_url)s</a>. Du kan också vara värd för din egen instans med <a href=\"%(repo_url)s\">öppen källkod</a>!"
+
+#: templates/umap/content_footer.html:5
+msgid "An OpenStreetMap project"
+msgstr ""
+
+#: templates/umap/content_footer.html:6
+msgid "version"
+msgstr ""
+
+#: templates/umap/content_footer.html:7
+msgid "Hosted by"
+msgstr ""
+
+#: templates/umap/content_footer.html:8
+msgid "Contact"
+msgstr ""
+
+#: templates/umap/content_footer.html:9 templates/umap/navigation.html:25
+msgid "Help"
+msgstr "Hjälp"
+
+#: templates/umap/dashboard_menu.html:6
+#, python-format
+msgid "My Maps (%(count)s)"
+msgstr ""
+
+#: templates/umap/dashboard_menu.html:8
+msgid "My Maps"
+msgstr ""
+
+#: templates/umap/dashboard_menu.html:12
+msgid "My profile"
+msgstr ""
+
+#: templates/umap/dashboard_menu.html:15
+msgid "My teams"
+msgstr ""
+
+#: templates/umap/home.html:14
+msgid "Map of the uMaps"
+msgstr "Karta över uMap-kartor."
+
+#: templates/umap/home.html:24
+msgid "Get inspired, browse maps"
+msgstr "Inspireras av andra kartor"
+
+#: templates/umap/login_popup_end.html:4
+msgid "You are logged in. Continuing..."
+msgstr "Du är nu inloggad. Fortsätter..."
+
+#: templates/umap/map_list.html:11 views.py:437
+msgid "by"
+msgstr "av"
+
+#: templates/umap/map_list.html:20
+msgid "More"
+msgstr "Mer"
+
+#: templates/umap/map_table.html:8 templates/umap/user_teams.html:14
+msgid "Name"
+msgstr "Namn"
+
+#: templates/umap/map_table.html:11
+msgid "Preview"
+msgstr ""
+
+#: templates/umap/map_table.html:14
+msgid "Who can see"
+msgstr ""
+
+#: templates/umap/map_table.html:17
+msgid "Who can edit"
+msgstr ""
+
+#: templates/umap/map_table.html:20
+msgid "Last save"
+msgstr "Senast sparad "
+
+#: templates/umap/map_table.html:23
+msgid "Owner"
+msgstr "Ägare"
+
+#: templates/umap/map_table.html:26 templates/umap/user_teams.html:20
+msgid "Actions"
+msgstr "Åtgärder"
+
+#: templates/umap/map_table.html:41 templates/umap/map_table.html:43
+msgid "Open preview"
+msgstr ""
+
+#: templates/umap/map_table.html:72 templates/umap/map_table.html:74
+msgid "Share"
+msgstr "Dela"
+
+#: templates/umap/map_table.html:78 templates/umap/map_table.html:80
+#: templates/umap/user_teams.html:38 templates/umap/user_teams.html:40
+msgid "Edit"
+msgstr "Redigera"
+
+#: templates/umap/map_table.html:84 templates/umap/map_table.html:86
+msgid "Download"
+msgstr "Ladda ned"
+
+#: templates/umap/map_table.html:90 templates/umap/map_table.html:92
+msgid "Clone"
+msgstr ""
+
+#: templates/umap/map_table.html:101 templates/umap/map_table.html:103
+msgid "Delete"
+msgstr ""
+
+#: templates/umap/map_table.html:117
+msgid "first"
+msgstr ""
+
+#: templates/umap/map_table.html:118
+msgid "previous"
+msgstr ""
+
+#: templates/umap/map_table.html:126
+#, python-format
+msgid "Page %(maps_number)s of %(num_pages)s"
+msgstr ""
+
+#: templates/umap/map_table.html:131
+msgid "next"
+msgstr ""
+
+#: templates/umap/map_table.html:132
+msgid "last"
+msgstr ""
+
+#: templates/umap/map_table.html:140
+#, python-format
+msgid "Lines per page: %(per_page)s"
+msgstr ""
+
+#: templates/umap/map_table.html:145
+#, python-format
+msgid "%(count)s maps"
+msgstr ""
+
+#: templates/umap/navigation.html:11 templates/umap/user_dashboard.html:6
+msgid "My Dashboard"
+msgstr ""
+
+#: templates/umap/navigation.html:14
+msgid "Starred maps"
+msgstr "Stjärnmärkta kartor "
+
+#: templates/umap/navigation.html:18
+msgid "Log in"
+msgstr "Logga in"
+
+#: templates/umap/navigation.html:18
+msgid "Sign in"
+msgstr "Logga in"
+
+#: templates/umap/navigation.html:22
+msgid "About"
+msgstr "Om"
+
+#: templates/umap/navigation.html:30
+msgid "Change password"
+msgstr "Byt lösenord"
+
+#: templates/umap/navigation.html:34
+msgid "Log out"
+msgstr "Logga ut"
+
+#: templates/umap/password_change.html:7
+msgid "Password change"
+msgstr "Byte av lösenord"
+
+#: templates/umap/password_change.html:10
+msgid ""
+"Please enter your old password, for security's sake, and then enter your new"
+" password twice so we can verify you typed it in correctly."
+msgstr "Fyll i ditt nuvarande lösenord för säkerhets skull, och sedan ditt nya lösenord två gånger så vi kan undvika felskrivningar. "
+
+#: templates/umap/password_change.html:17
+msgid "Old password"
+msgstr "Nuvarande lösenord"
+
+#: templates/umap/password_change.html:22
+msgid "New password"
+msgstr "Nytt lösenord"
+
+#: templates/umap/password_change.html:26
+msgid "New password confirmation"
+msgstr "Bekräfta nytt lösenord"
+
+#: templates/umap/password_change.html:27
+msgid "Change my password"
+msgstr "Ändra mitt lösenord"
+
+#: templates/umap/password_change_done.html:7
+msgid "Password change successful"
+msgstr "Lösenordet har ändrats!"
+
+#: templates/umap/password_change_done.html:10
+msgid "Your password was changed."
+msgstr "Ditt lösenord har ändrats."
+
+#: templates/umap/search.html:15
+#, python-format
+msgid "%(count)s map found:"
+msgid_plural "%(count)s maps found:"
+msgstr[0] "%(count)s karta hittades:"
+msgstr[1] "%(count)s kartor hittades:"
+
+#: templates/umap/search.html:24
+msgid "No map found."
+msgstr "Ingen karta hittades. "
+
+#: templates/umap/search.html:29
+msgid "Latest created maps"
+msgstr "Senast skapade kartor "
+
+#: templates/umap/search_bar.html:4
+msgid "Search maps"
+msgstr "Sök karta"
+
+#: templates/umap/search_bar.html:15
+msgid "Search"
+msgstr "Sök"
+
+#: templates/umap/team_detail.html:10
+#, python-format
+msgid "Browse %(current_team)s's maps"
+msgstr ""
+
+#: templates/umap/team_detail.html:22
+#, python-format
+msgid "%(current_team)s has no public maps."
+msgstr ""
+
+#: templates/umap/team_form.html:24
+msgid "Delete this team"
+msgstr ""
+
+#: templates/umap/team_form.html:47
+msgid "Add user"
+msgstr ""
+
+#: templates/umap/user_dashboard.html:9 templates/umap/user_dashboard.html:25
+msgid "Search my maps"
+msgstr "Sök i mina kartor"
+
+#: templates/umap/user_dashboard.html:17 templates/umap/user_dashboard.html:22
+msgid "Map’s title"
+msgstr ""
+
+#: templates/umap/user_dashboard.html:30
+#, python-format
+msgid "Download %(count)s maps"
+msgstr ""
+
+#: templates/umap/user_dashboard.html:40
+msgid "You have no map yet."
+msgstr "Du har ingen karta än. "
+
+#: templates/umap/user_teams.html:17
+msgid "Users"
+msgstr ""
+
+#: templates/umap/user_teams.html:48
+msgid "New team"
+msgstr ""
+
+#: views.py:234
+msgid "Cannot delete a team with more than one member"
+msgstr ""
+
+#: views.py:238
+#, python-format
+msgid "Team “%(name)s” has been deleted"
+msgstr ""
+
+#: views.py:442
+msgid "View the map"
+msgstr "Se kartan"
+
+#: views.py:825
+msgid "See full screen"
+msgstr ""
+
+#: views.py:968
+msgid "Map editors updated with success!"
+msgstr "Kartans redaktörer har uppdaterats!"
+
+#: views.py:1004
+#, python-format
+msgid "The uMap edit link for your map: %(map_name)s"
+msgstr "Redigeringslänken för din uMap-karta: %(map_name)s"
+
+#: views.py:1007
+#, python-format
+msgid "Here is your secret edit link: %(link)s"
+msgstr "Här är din hemliga redigeringslänk: %(link)s"
+
+#: views.py:1014
+#, python-format
+msgid "Can't send email to %(email)s"
+msgstr ""
+
+#: views.py:1017
+#, python-format
+msgid "Email sent to %(email)s"
+msgstr "Ett mejl har skickats till %(email)s"
+
+#: views.py:1028
+msgid "Only its owner can delete the map."
+msgstr "Bara ägaren kan radera kartan."
+
+#: views.py:1031
+msgid "Map successfully deleted."
+msgstr ""
+
+#: views.py:1057
+#, python-format
+msgid ""
+"Your map has been cloned! If you want to edit this map from another "
+"computer, please use this link: %(anonymous_url)s"
+msgstr "Din karta har kopierats! Om du vill redigera den här kartan från en annan dator, använd denna länk: %(anonymous_url)s"
+
+#: views.py:1062
+msgid "Congratulations, your map has been cloned!"
+msgstr "Grattis, din karta har kopierats!"
+
+#: views.py:1313
+msgid "Layer successfully deleted."
+msgstr "Lagret har raderats."
+
+#: views.py:1335
+msgid "Permissions updated with success!"
+msgstr ""

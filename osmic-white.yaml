@@ -1,0 +1,31 @@
+input:
+- name: accommodation
+- name: administration
+- name: amenity
+- name: barrier
+- name: eat-drink
+- name: emergency
+- name: energy
+- name: health
+- name: money
+- name: nature
+- name: outdoor
+- name: religious
+- name: shop
+- name: sports
+- name: tourism
+- name: transport
+
+output_basedir: "tmp/white"
+empty_output: true
+format: "png"
+subdirs: false
+
+global_style:
+  padding: 4
+  fill: "#ededed"
+
+  halo:
+    fill: "#444444"
+    width: 1
+    opacity: 0.3

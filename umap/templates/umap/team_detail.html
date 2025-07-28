@@ -1,0 +1,31 @@
+{% extends "umap/content.html" %}
+
+{% load i18n %}
+
+{% block head_title %}
+  {% blocktranslate %}{{ current_team }}’s maps{% endblocktranslate %} - {{ SITE_DESCRIPTION }}
+{% endblock head_title %}
+
+{% block maincontent %}
+  <div class="wrapper">
+      <div class="row">
+        <div class="col wide">
+          <h2 class="section">
+            {% blocktrans %}Browse {{ current_team }}'s maps{% endblocktrans %}
+          </h2>
+          {% if current_team.description %}
+            <p>{{ current_team.description }}</p>
+          {% endif %}
+        </div>
+    </div>
+    <div class="grid-container row">
+    {% if maps %}
+      {% include "umap/map_list.html" %}
+    {% else %}
+      <div>
+        {% blocktrans %}{{ current_team }} has no public maps.{% endblocktrans %}
+      </div>
+    {% endif %}
+    </div>
+  </div>
+{% endblock maincontent %}

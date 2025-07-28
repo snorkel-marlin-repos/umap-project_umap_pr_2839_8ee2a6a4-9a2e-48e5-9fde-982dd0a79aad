@@ -1,0 +1,33 @@
+/* ************************************************* */
+/* *********************** FONT ******************** */
+/* ************************************************* */
+
+
+@font-face {
+    font-family: 'fira_sans';
+    src: url('./font/FiraSans-Light.woff2') format('woff2'),
+         url('./font/FiraSans-Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'fira_sans';
+    src: url('./font/FiraSans-SemiBold.woff2') format('woff2'),
+         url('./font/FiraSans-SemiBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'fira_sans';
+    src: url('./font/FiraSans-LightItalic.woff2') format('woff2'),
+         url('./font/FiraSans-LightItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+

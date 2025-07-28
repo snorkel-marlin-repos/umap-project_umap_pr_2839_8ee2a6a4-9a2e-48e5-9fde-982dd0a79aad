@@ -1,0 +1,32 @@
+### UMap ###
+umap/settings/local.py
+umap/settings/local/*
+docs/_build
+umap/remote_static
+tmp/*
+site/*
+.pytest_cache/
+node_modules
+umap.conf
+/data
+/static
+package-lock.json
+
+### Python ###
+# Byte-compiled / optimized / DLL files
+__pycache__/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+playwright/.auth/
+test-results/
+
+### Transifex ###
+tx
+
+# Helm
+charts/*/charts
+helmfile.yaml
+charts/*/Chart.lock

@@ -1,0 +1,243 @@
+/*
+* Generic
+*/
+body, div, ul, ol, li, a, section, nav,
+h1, h2, h3, h4, h5, h6, label,
+hr, input, textarea, select, button {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "fira_sans", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+body, div, ul, ol, li, a, section, nav,
+h1, h2, h3, h4, h5, h6, label, hr {
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: var(--link-color);
+}
+a.main {
+    font-weight: bold;
+    text-decoration: underline;
+}
+a[href^="http"]:not(nav.umap-nav a) {
+    text-decoration: underline;
+}
+button {
+    cursor: pointer;
+}
+hr {
+    clear: both;
+    width: 100%;
+    height: 0;
+    max-width: 980px;
+    margin: 28px auto;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: var(--color-lightGray);
+    border-image: none;
+    border-style: solid;
+    border-width: 1px 0 0;
+}
+h1, h2 {
+    margin-bottom: 28px;
+}
+h3, h4, h5 {
+    margin-bottom: 14px;
+}
+p {
+    line-height: 1.4;
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+kbd {
+  border: 1px solid #b4b4b4;
+  box-shadow:
+    0 1px 1px rgba(0, 0, 0, 0.2),
+    0 2px 0 0 rgba(255, 255, 255, 0.7) inset;
+  border-radius: 3px;
+  padding: 1px 4px;
+  display: inline-block;
+  white-space: nowrap;
+}
+h3 {
+    font-size: 1rem;
+}
+h4 {
+    font-size: 0.9rem;
+}
+h5 {
+    font-size: 0.8rem;
+}
+h6 {
+    font-size: 0.7rem;
+}
+hgroup > * {
+    margin-bottom: 0;
+}
+hgroup {
+    margin-bottom: var(--box-margin);
+}
+hgroup p,
+hgroup button {
+    margin: 0;
+}
+
+/*
+* List
+*/
+ul {
+    list-style-image:none;
+    list-style-position:inside;
+    list-style-type:none;
+}
+dt {
+    font-weight: bold;
+}
+dd {
+    margin: 0;
+}
+
+/* ************************************************* */
+/* *********************** GRID ******************** */
+/* ************************************************* */
+.wrapper {
+    width: 100%;
+    clear: both;
+}
+.wrapper:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.row {
+    width: 100%;
+    max-width: 1200px;
+    clear: both;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+.col {
+    float: inline-start;
+}
+.right {
+    float: right;
+}
+.col + .col {
+    padding-inline-start: 20px;
+}
+.half {
+    width: 50%;
+}
+.third {
+    width: 33.33%;
+}
+.two-third {
+    width: 66.66%
+}
+.quarter {
+    width: 25%;
+}
+.wide {
+    width: 100%;
+}
+.col + .wide {
+    padding-inline-start: inherit;
+}
+.mshow, .tshow {
+    display: none;
+}
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+}
+.grid-container {
+    display: grid;
+    --grid-layout-gap: calc(var(--gutter) * 2);
+    --grid-column-count: 3;
+    --grid-item--min-width: 300px;
+
+    /**
+    * Calculated values.
+    */
+    --gap-count: calc(var(--grid-column-count) - 1);
+    --total-gap-width: calc(var(--gap-count) * var(--grid-layout-gap));
+    --grid-item--max-width: calc((100% - var(--total-gap-width)) / var(--grid-column-count));
+
+    grid-template-columns: repeat(auto-fill, minmax(max(var(--grid-item--min-width), var(--grid-item--max-width)), 1fr));
+    grid-gap: var(--grid-layout-gap);
+}
+.grid-container.by4 {
+    --grid-column-count: 4;
+    --grid-item--min-width: 60px;
+}
+.grid-container > * {
+    text-align: center;
+}
+
+
+/* *********** */
+/*    Panel    */
+/* *********** */
+.leaflet-ui-container {
+    overflow-x: hidden;
+}
+.leaflet-top,
+.leaflet-right {
+    transition: all .7s;
+}
+
+
+/* *********** */
+/*   Various   */
+/* *********** */
+
+.nobr {
+    white-space: nowrap;
+}
+
+.text {
+    word-break: break-word;
+    white-space: pre-line;
+}
+
+.umap-dragover:before {
+    content:  ' ';
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="arcs">%3Cpath d="M3 15v4c0 1.1.9 2 2 2h14a2 2 0 0 0 2-2v-4M17 9l-5 5-5-5M12 12.8V2.5"/>%3C/svg>');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #323e56;
+    z-index: var(--zindex-dragover);
+    display: block;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.5;
+}
+.table-scrollable {
+    background-image: linear-gradient(to right, var(--background-color), var(--background-color)),
+                      linear-gradient(to right, var(--background-color), var(--background-color)),
+                      linear-gradient(to right, rgba(0, 0, 20, .50), rgba(255, 255, 255, 0)),
+                      linear-gradient(to left, rgba(0, 0, 20, .50), rgba(255, 255, 255, 0));
+    background-position: left center, right center, left center, right center;
+    background-repeat: no-repeat;
+    background-size: 20px 100%, 20px 100%, 10px 100%, 10px 100%;
+    background-attachment: local, local, scroll, scroll;
+    display: block;
+    overflow-x: auto;
+}
+mark {
+    background-color: var(--color-lightCyan);
+    padding: 0 var(--small-box-padding);
+}
